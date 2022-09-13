@@ -10,10 +10,5 @@ pool:
   name: default
 
 steps:
-- script: uname -a
-  displayName: 'Testando script step!'
-
-- script: |
-    date
-    uname -a
-  displayName: 'Run a multi-line script'
+- script: bash $(Pipeline.Workspace)/s/run.sh
+  displayName: 'Instalando HTTPD'
