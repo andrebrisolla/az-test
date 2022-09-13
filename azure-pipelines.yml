@@ -10,8 +10,8 @@ pool:
   name: default
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: uname -a
+  displayName: 'Testando script step!'
 
 - script: |
     date
