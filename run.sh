@@ -1,6 +1,6 @@
-yum remove nginx -y
-yum install httpd -y
-systemctl enable httpd
-systemctl start httpd
-echo "eae brisa!" > /var/www/html/index.html
+sudo yum remove nginx -y
+sudo yum install httpd -y
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo sh -c "echo '<b>Hello world!</b>' > /var/www/html/index.html"
 curl http://$(hostname)
